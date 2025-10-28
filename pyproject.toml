@@ -1,0 +1,17 @@
+[tool.ruff]
+# исключения директорий
+exclude = [
+  ".git",
+  ".venv",
+  "migrations",
+  "settings.py",
+]
+# максимальная длина строки (по умолчанию 88, как у Black)
+line-length = 88
+
+[tool.ruff.lint]
+# Включаем все стандартные категории правил
+select = ["E", "F", "W", "I"]
+
+# Разрешаем автоисправление
+fixable = ["ALL"]
